@@ -1,0 +1,78 @@
+<%- include('includes/head')  %>
+<body>
+    <%- include('includes/nav') %>
+    <!-- -----------END OF NAVIGATION---------- -->
+    
+    <section class="contact">
+        <div class="container contact-container">
+            <aside class="contact-aside">
+                <div class="aside-image">
+                    <img src="images/contact.svg" alt="">
+                </div>
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cumque inventore commodi.</p>
+                <ul class="contact-details">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <h5>+2349037004209</h5>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h5>iamjomani247@gmail.com</h5>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-map-location"></i>
+                        <h5>Lagos, Nigeria</h5>
+                    </li>
+                </ul>
+
+                <ul class="contact-socials">
+                    <li>
+                        <button class="contact-btn">
+                            <a href=""><i class="contact-icon fa-brands fa-facebook-f "></i></a>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="contact-btn">
+                            <a href=""><i class="contact-icon fa-brands fa-instagram "></i></a>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="contact-btn">
+                            <a href=""><i class="contact-icon fa-brands fa-twitter"></i></a>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="contact-btn">
+                            <a href=""><i class="contact-icon fa-brands fa-linkedin-in"></i></a>
+                        </button>
+                    </li>
+                </ul>
+            </aside>
+
+            <form action="https://formspree.io/f/mpzeadoa" method="POST" class="contact-form">
+                <div class="form-names">
+                    <input type="text" name="firstname" id="" placeholder="First name" required>
+                    <input type="text" name="Lastname" id="" placeholder="Last name" required>
+                </div>
+                <input type="email" name="email" id="" placeholder="example@example.com" required>
+                <textarea name="message" id="" cols="" rows="7" placeholder="explain precisely and concisely"></textarea>
+                <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- ---------------------TESTIMONIAL ENDS-------------------- -->
+
+    <!-- ---------------FOOTER---------------- -->
+    <%- include('includes/footer')  %>
+   <!-- ---------------FOOTER ENDS---------------- -->
+
+    <!-- -------------JS SCRIPTS------------ -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+.modal{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    display: none;
+    transition: var(--transition);
+    animation: openModal 1s ease forwards;
+}
+
+.modal-display{
+    display: grid;
+}
+
+.modal-card{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+    background-color: var(--primary);
+    background-color: white;
+    color: black;
+    width: 52rem;
+}
+
+.modal-card #close-modal{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.modal-card .modal-image{
+    width: 30rem;
+}
+
+.modal-card .modal-image img{
+    display: block;
+    width: 100%;
+}
+
+.modal-card h2{
+    margin-bottom: 2rem;
+    color: var(--primary);
+    /* color: var(--bg-dark); */
+}
+
+.modal-card form{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-card input[type='email']{
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+}
+
+.modal-card .btn:hover{
+    background-color: var(--bg-dark);
+    color: var(--light);
+}
+
+.closeAnimation{
+    animation: closeModal 1s linear forwards;
+}
+/* CLOSE AND OPEN MODAL ANIMATION */
+
+@keyframes openModal{
+    from{
+        opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
+
+@keyframes closeModal{
+    from{
+        opacity:1
+    }
+    to{
+        opacity:0
+    }
+}
+
+@media screen and (max-width:900px){
+    .modal-card{
+        flex-direction: column;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .modal-card .modal-image{
+        width: 15rem;
+        height: 15rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .modal-card form{
+        display: block;
+    }
+
+    .modal-card input[type='email'],
+    .modal-card input[type='email']::placeholder{
+        text-align: center;
+    }
+
+    .modal-card .btn{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width:450px){
+    .modal-card{
+        flex-direction: column;
+        width: 80vw;
+        /* height: 70vh; */
+        text-align: center;
+    }
+
+    .modal-card .modal-image{
+       display: none;
+    }
+
+    .modal-text h2{
+        font-size: 1.5rem;
+    }
+
+    .modal-text p{
+        font-size: 0.8rem;
+    }
+
+}
+
