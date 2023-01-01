@@ -454,12 +454,12 @@ footer{
     /* justify-content: space-between; */
 }
 
-.social-links i{
+.social-links .contact-btn i{
     transition: var(--transition);
 }
 
-.social-links i:hover {
-    transform: scale(1.5);
+.social-links .contact-btn:hover i {
+    transform: scale(1.2);
 }
 
 .copyright{

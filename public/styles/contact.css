@@ -53,8 +53,7 @@
     transition: var(--transition);
 }
 
-.contact-socials li:hover{
-    padding: 0.5rem;
+.contact-socials li:hover i{
     transform: scale(1.2);
 }
 

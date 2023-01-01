@@ -9,6 +9,7 @@
     display: none;
     transition: var(--transition);
     animation: openModal 1s ease forwards;
+    z-index: 20;
 }
 
 .modal-display{
